@@ -1,0 +1,32 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row; width: 340px;">
+        <ui:VisualElement style="flex-grow: 1; width: auto;">
+            <ui:Button text="+ Wood Tier 1" name="upgrade-wood-tier-one-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Wood Tier 2" name="upgrade-wood-tier-two-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Wood Tier 3" name="upgrade-wood-tier-three-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Wood Tier 4" name="upgrade-wood-tier-four-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:ListView />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; width: auto;">
+            <ui:Button text="+ Food Tier 1" name="upgrade-food-tier-one-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Food Tier 2" name="upgrade-food-tier-two-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Food Tier 3" name="upgrade-food-tier-three-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Food Tier 4" name="upgrade-food-tier-four-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:ListView />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; width: auto;">
+            <ui:Button text="+ Gold Tier 1" name="upgrade-gold-tier-one-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Gold Tier 2" name="upgrade-gold-tier-two-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Gold Tier 3" name="upgrade-gold-tier-three-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Gold Tier 4" name="upgrade-gold-tier-four-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:ListView />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; width: auto;">
+            <ui:Button text="+ Stone Tier 1" name="upgrade-stone-tier-one-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Stone Tier 2" name="upgrade-stone-tier-two-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Stone Tier 3" name="upgrade-stone-tier-three-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:Button text="+ Stone Tier 4" name="upgrade-stone-tier-four-button" style="height: 60px; width: 80px; -unity-text-align: middle-center; white-space: pre-wrap;" />
+            <ui:ListView />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
