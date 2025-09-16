@@ -19,13 +19,13 @@ namespace Domain.Units.Implements
         [SerializeField] private int attackRange = 1;
         [SerializeField] private int attackSpeed = 2;
         [SerializeField] private int visionRange = 4;
-        
+
         // Speed base
         [SerializeField] private float baseWoodCollectionSpeed = 1;
         [SerializeField] private float baseFoodCollectionSpeed = 1;
         [SerializeField] private float baseStoneCollectionSpeed = 1;
         [SerializeField] private float baseGoldCollectionSpeed = 1;
-        
+
         // Working
         [SerializeField] private bool collectingWood = false;
         [SerializeField] private bool collectingFood = false;
@@ -33,7 +33,7 @@ namespace Domain.Units.Implements
         [SerializeField] private bool collectingGold = false;
         [SerializeField] private bool building = false;
         private bool IsWorking => collectingWood || collectingFood || collectingStone || collectingGold || building;
-        
+
         public string Name => unitName;
         public string Type => unitType;
         public string Icon => unitIcon;
@@ -57,7 +57,7 @@ namespace Domain.Units.Implements
         public float StoneCollectionSpeed => stoneCollectionSpeed;
         public float GoldCollectionSpeed => goldCollectionSpeed;
 
-        
+
         private void OnEnable()
         {
             var manager = FindFirstObjectByType<UnitUpdatesManager>();
@@ -76,16 +76,16 @@ namespace Domain.Units.Implements
                 manager.OnBonusesUpdated -= UpdateBonuses;
             }
         }
-        
-        public float CalculateTotalBonus(ResourcesTypesEnum resourceType)
+
+        private float CalculateTotalBonus(ResourcesTypesEnum resourceType)
         {
             var manager = FindFirstObjectByType<UnitUpdatesManager>();
-            
+
             if (manager == null) return 0f;
 
             return manager.GetBonusCollectionSpeed(resourceType);
         }
-        
+
         private void UpdateBonuses(UnitUpdatesManager manager)
         {
             woodCollectionSpeed = baseWoodCollectionSpeed + CalculateTotalBonus(ResourcesTypesEnum.Wood);
